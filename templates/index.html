@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Braille Text To Speech</title>
+	<style>
+body {
+  background-image: url('https://previews.123rf.com/images/prazis/prazis1611/prazis161100060/65810989-blind-disabled-with-cane-and-dog-guide-walk-near-sea-under-tree-sunset-concept-help-blind-disabiliti.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.heading{
+	font-weight: 100;
+	font-size: 4em;
+	text-shadow: 3px 3px 5px blue;
+	color: #00FF00;
+	background-color: black;
+	}
+.heading1{
+	text-shadow: 1px 1px 5px blue;
+	color: #00FF00;
+	background-color: black;
+}
+img{
+	height: 100%;
+	width: 100%
+	}
+.text{
+	font-size: 50px;
+	font-style: italic;
+	text-shadow: 3px 3px 5px blue;
+	color:#00FF00;
+}
+.text1{
+	font-size: 40px;
+	font-style: italic;
+	text-shadow: 3px 3px 5px blue;
+	color:#00FF00;
+	background-color: black;
+	
+}
+.heading2{
+	text-shadow: 1px 1px 5px blue;
+	background-color: black;
+	color: #00FF00;
+}
+.but{
+	background-color: #6050DC;
+	width: 120px;
+	height: 30px;
+	border-radius: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+				<h1 class="heading">Braille Image To Text</h1>
+				<h1 class="heading1">Upload Your Image To Generate Text</h1>
+			</div>
+		</div>
+		<br>
+		<br>
+		<form class="form-inline" method="POST" action="/" enctype="multipart/form-data">
+			<label class="heading2"><h2>Image : &nbsp;&nbsp;</h2></label>
+			<input class="form-control"  type="file" name="userfile" placeholder ="Your Image">
+			<button type="submit" class="but">Submit</button>
+		</form>
+		{% if your_result %}
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="{{your_result['image']}}">
+			</div>
+			<div class="col-sm-4">
+				<h1 class="text">Generated Text From Image:</h1>
+				<p class="text1"><b >{{your_result['text']}}</b></p>
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</body>
+</html>
