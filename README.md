@@ -11,6 +11,6 @@
 ## Models used
 - CNN
 # Produced Result
-<img src="Screenshot (740).png" alt="Italian Trulli">
-<img src="Screenshot (741).png" alt="Italian Trulli">
-<img src="Screenshot (743).png" alt="Italian Trulli">
+<img src="Screenshot (740).png" alt="Braille Image To Text Conversion">
+<img src="Screenshot (741).png" alt="Braille Image To Text Conversion">
+<img src="Screenshot (743).png" alt="Braille Image To Text Conversion">
