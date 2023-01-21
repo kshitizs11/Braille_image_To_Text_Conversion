@@ -11,5 +11,6 @@
 ## Models used
 - CNN
 
-<img src="Screenshot (740).png">
+<img src="Screenshot (316).png">
+<img src="Screenshot (318).png">
 
